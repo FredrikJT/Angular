@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // NgModel lives here
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -9,8 +10,9 @@ import { HeroesComponent } from './heroes/heroes.component';
     AppComponent,
     HeroesComponent
   ],
-  imports: [
-    BrowserModule
+  imports: [ //External modules that the app needs
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
